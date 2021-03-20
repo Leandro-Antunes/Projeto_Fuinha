@@ -17,11 +17,22 @@ body {
   font-size: 16px; /* 1rem */
 }
 
+a {
+  color: steelblue;
+  text-decoration: none;
+}
+
+a:hover {
+  color: orangered;
+  text-decoration: underline;
+}
+
 /* Fundo */
 body {
   /* background-image: url(/img/bg_01.jpg); */
   background-size: cover;
   background-repeat: no-repeat;
+  background-color: darkgray;
 }
 
 /* Quadro principal */
@@ -38,6 +49,7 @@ header {
   display: flex;
   align-items: center;
   /* color: rgb(255,255,255); */
+  background: rgba(255,255,255,.5);
 }
 header img {
   display: block;
@@ -79,9 +91,14 @@ nav a:first-child {
 nav a:hover {
     background: white;
     color: black;
+    text-decoration: none;
 }
 
 /* Conteúdo */
+
+main {
+  background: white;
+}
 
 article {
     padding: 0 1rem;
@@ -118,6 +135,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border-bottom: 1px dotted grey;
 }
 
 .license div {
@@ -136,5 +154,29 @@ footer {
  }
 
  .footer-menus {
-   
+   display: flex;
+   justify-content: space-around;
+   margin-top: .5rem;
+   padding: .5rem;
  }
+
+ .footer-menus ul {
+   list-style: none;
+   padding: .5rem;
+   margin-top: .5rem;
+   line-height: 1.4;
+ }
+
+ .footer-menus a {
+  color: white;
+  text-decoration: none;
+ }
+
+ .footer-menus a:hover {
+   color: orangered;
+ }
+
+ .footer-menus i {
+   margin-right: .5rem;
+ }
+
